@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url(fonts/OpenSans-CondLight.ttf);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.contentA {
+    flex: 1;
+}
+
+.contentB {
+    flex: 3;
+}
+
+h1 {
+  color: Black;
+  position: relative;
+  top: 1%;
+  left: 28%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h2 {
+  color: Black;
+  position: relative;
+  left: 28%;
+  bottom: 5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+ul {
+  list-style-type: none;
+  background-color: none;
+  position: relative;
+}
+
+li a {
+  display: block;
+  color: Black;
+  margin: 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+li a:active {
+  color: #69c7ab;
+}
+
+li a:hover {
+  color: #69c7ab;
+}
+
+.center {
+	position: relative;
+	top: 8.6%;
+	left: 15%;
+	width: 60%;
+	height: auto;
+}

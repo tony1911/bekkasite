@@ -9,35 +9,23 @@
 }
 
 .contentA {
-    flex: 1;
+    order: 2;
+    -webkit-order: 2;
 }
 
 .contentB {
-    flex: 3;
+  width: 820px;
+  height: 540px;
 }
 
 h1 {
   color: Black;
-  position: relative;
-  top: 1%;
-  left: 28%;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 38px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 10px;
-}
-
-h2 {
-  color: Black;
-  position: relative;
-  left: 28%;
-  bottom: 5%;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 38px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 10px;
+  padding-left: 40px;
 }
 
 ul {
@@ -71,4 +59,51 @@ li a:hover {
 	left: 15%;
 	width: 60%;
 	height: auto;
+}
+#mobileImage {
+  display: none;
+
+}
+#desktopImage {
+  width: 100%;
+  height: 540px;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 810px) {
+  #contentB {
+    display: none;
+  }
+  #mobileImage {
+    display: inline-block;
+    padding-left: 40px;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #desktopImage {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #mobileImage {
+    width: 100%;
+    height: 300px;
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #mobileImage {
+    /* width: 360px; */
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #mobileImage {
+    /* width: 250px; */
+    height: 150px;
+  }
 }
